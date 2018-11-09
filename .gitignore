@@ -14,3 +14,19 @@ themes/*
 !themes/project-04-theme/
 # Ignore packages #
 themes/project-04-theme/node_modules/
+
+# Ignore OS files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*[Tt]humbs.db
+*.Trashes
+# Ignore logs and databases #
+*.log
+*.sql
+*.sqlite
+error_log
+access_log
