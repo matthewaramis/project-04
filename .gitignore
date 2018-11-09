@@ -1,0 +1,16 @@
+# Ignore everything in "wp-content" except these directories. #
+/*
+!.gitignore
+!plugins/
+!themes/
+!uploads/
+!README.md
+# Ignore everything in "plugins" except certain plugins. #
+plugins/*
+!plugins/inhabitent-functionality/
+!plugins/business-hours-widget/
+# Ignore everything in "themes" except the active theme. #
+themes/*
+!themes/project-04-theme/
+# Ignore packages #
+themes/project-04-theme/node_modules/
