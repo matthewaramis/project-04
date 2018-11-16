@@ -21,6 +21,16 @@ function red_starter_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
 
+
+/** 
+ * Replaces '...' with READ MORE at end of journal posts
+*/
+function inhabitent_excerpt_more($more) {
+	global $post;
+ return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read more</a>';
+}
+add_filter('excerpt_more', 'inhabitent_excerpt_more');
+
 function my_login_logo() { ?>
 	<style type="text/css">
 		#login h1 a, .login h1 a {
@@ -35,13 +45,6 @@ function my_login_logo() { ?>
  <?php }
  add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
-// function inhabitent_logo() {
-// 	echo '<style type="text/css">                                                                   
-// 		h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg) !important; 
-// 		height: 120px !important; width: 410px !important; margin-left: 0px;}                            
-// 	</style>';
-// }
-// add_action('login_head', 'inhabitent_logo');
 
 function filter_login_headerurl( $login_header_url ) {
     $login_header_url= "http://localhost:8888/project-04/";

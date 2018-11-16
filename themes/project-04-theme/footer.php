@@ -35,7 +35,7 @@
 							<p><span class="footerBold">Sunday:</span> Closed</p>
 						</div>
 					</div>
-
+					
 					<div class="footerLogo">
 						<img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-text.svg"/>
 					</div>

@@ -648,21 +648,25 @@ a {
 .bypostauthor {
   display: block; }
 
+.site-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%; }
+
+.widget-area {
+  margin-left: 4rem;
+  font-family: 'Merriweather-Light'; }
+
 .siteFooter {
   background-image: url("../../images/dark-wood.png");
   background-repeat: repeat;
   color: #ffffff; }
 
 .siteInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
   padding-top: 2rem;
+  padding-bottom: 3rem;
   font-family: 'Merriweather-Light'; }
 
 .footerBold {
@@ -675,17 +679,27 @@ h4 {
   letter-spacing: 2px;
   color: #d99054; }
 
-.footerContact p a {
-  text-decoration: none;
-  color: #ffffff; }
+.footerContact {
+  margin: 1rem 2rem 0 8rem; }
+  .footerContact p a {
+    text-decoration: none;
+    color: #ffffff; }
+  .footerContact p i {
+    font-size: 1.25rem;
+    margin-right: 0.5rem; }
 
-.footerContact p i {
-  font-size: 1.25rem;
-  margin-right: 0.5rem; }
+.footerHours {
+  margin: 1rem 0 0 4rem; }
 
 .footerLogo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   height: 3rem;
-  width: auto; }
+  margin: 3rem 0 0 18rem; }
 
 .footerCopy {
   font-family: 'Novecento';

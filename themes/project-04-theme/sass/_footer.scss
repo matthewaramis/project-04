@@ -5,10 +5,13 @@
 }
 
 .siteInfo {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
   padding-top: 2rem;
+  padding-bottom: 3rem;
   font-family: 'Merriweather-Light';
 }
 
@@ -25,6 +28,8 @@ h4 {
 }
 
 .footerContact {
+  margin: 1rem 2rem 0 8rem;
+
   p {
     a {
       text-decoration: none;
@@ -37,10 +42,16 @@ h4 {
   }
 }
 
+.footerHours {
+  margin: 1rem 0 0 4rem;
+}
+
 .footerLogo {
   img {
+    display: flex;
+    justify-content: flex-end;
     height: 3rem;
-    width: auto;
+    margin: 3rem 0 0 18rem;
   }
 }
 
