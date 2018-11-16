@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'novecento-bold';
+    src: url('novecento-bold.eot');
+    src: url('novecento-bold.eot?#iefix') format('embedded-opentype'),
+        url('novecento-bold.woff2') format('woff2'),
+        url('novecento-bold.woff') format('woff'),
+        url('novecento-bold.ttf') format('truetype'),
+        url('novecento-bold.svg#.') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
