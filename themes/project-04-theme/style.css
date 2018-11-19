@@ -659,9 +659,6 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
-.site-main {
-  margin-left: 10rem; }
-
 .post-template-default .entry-content {
   font-family: "Merriweather-Light"; }
 
@@ -743,7 +740,8 @@ h4 {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  margin-bottom: 0; }
 
 /*--------------------------------------------------------------
 # Media
@@ -809,61 +807,98 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home-hero {
+  background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center, -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/home-hero.jpg) no-repeat center/100%;
+  background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center, linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg) no-repeat center/100%;
+  width: 100vw;
+  height: 100vh; }
+
+.shop-stuff,
+.inhabitent-journal {
+  font-family: "Novecento";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin: 4rem 0; }
+
 /* Journal */
-.site-main .entry-header {
-  position: relative; }
-  .site-main .entry-header img {
-    width: 47.5rem;
-    height: auto; }
-  .site-main .entry-header .entry-title {
-    position: absolute;
-    top: 0;
-    margin-top: 2.5rem;
-    padding: 0.25rem 1.75rem 0.25rem 1.75rem;
-    max-width: 75%;
-    line-height: 1.75;
-    font-family: "Novecento-Bold";
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #ffffff;
-    background: #248a83;
-    padding: 0.5rem 0 0.5rem 1.5rem; }
-    .site-main .entry-header .entry-title a {
+.blog .site-main,
+.single-post .site-main {
+  margin-left: 10rem; }
+  .blog .site-main .entry-header,
+  .single-post .site-main .entry-header {
+    position: relative; }
+    .blog .site-main .entry-header img,
+    .single-post .site-main .entry-header img {
+      width: 47.5rem;
+      height: auto; }
+    .blog .site-main .entry-header .entry-title,
+    .single-post .site-main .entry-header .entry-title {
+      position: absolute;
+      top: 0;
+      margin-top: 2.5rem;
+      padding: 0.25rem 1.75rem 0.25rem 1.75rem;
+      max-width: 75%;
+      line-height: 1.75;
+      font-family: "Novecento-Bold";
+      text-transform: uppercase;
+      letter-spacing: 2px;
       color: #ffffff;
-      text-decoration: none; }
-    .site-main .entry-header .entry-title a:hover {
-      color: #f0e4d1; }
-  .site-main .entry-header .entry-meta {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-right: 2.5rem;
-    margin-bottom: 0.35rem;
-    font-family: "Novecento";
-    text-transform: uppercase;
-    color: #ffffff;
-    background: #248a83; }
-    .site-main .entry-header .entry-meta .comments-link a {
-      text-decoration: none;
-      color: #ffffff; }
-    .site-main .entry-header .entry-meta .comments-link a:hover {
-      color: #f0e4d1; }
+      background: #248a83;
+      padding: 0.5rem 0 0.5rem 1.5rem; }
+      .blog .site-main .entry-header .entry-title a,
+      .single-post .site-main .entry-header .entry-title a {
+        color: #ffffff;
+        text-decoration: none; }
+      .blog .site-main .entry-header .entry-title a:hover,
+      .single-post .site-main .entry-header .entry-title a:hover {
+        color: #f0e4d1; }
+    .blog .site-main .entry-header .entry-meta,
+    .single-post .site-main .entry-header .entry-meta {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-right: 2.5rem;
+      margin-bottom: 0.35rem;
+      font-family: "Novecento";
+      text-transform: uppercase;
+      color: #ffffff;
+      background: #248a83; }
+      .blog .site-main .entry-header .entry-meta .comments-link a,
+      .single-post .site-main .entry-header .entry-meta .comments-link a {
+        text-decoration: none;
+        color: #ffffff; }
+      .blog .site-main .entry-header .entry-meta .comments-link a:hover,
+      .single-post .site-main .entry-header .entry-meta .comments-link a:hover {
+        color: #f0e4d1; }
 
 /* About Page */
-.site-content {
+.page-template-about .site-content {
   display: block; }
-  .site-content .site-main {
+  .page-template-about .site-content .site-main {
     margin: 0; }
-    .site-content .site-main .entry-header {
-      width: 100vw;
-      height: 100vh; }
-      .site-content .site-main .entry-header .entry-title {
-        background: none;
-        font-size: 3rem;
-        top: 20rem; }
-    .site-content .site-main .entry-content {
+    .page-template-about .site-content .site-main .entry-header .entry-title {
+      font-family: "Novecento-Bold";
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background: none;
+      font-size: 3rem;
+      top: 20rem; }
+    .page-template-about .site-content .site-main .entry-content {
       margin: 3rem 20rem; }
-      .site-content .site-main .entry-content h2 {
+      .page-template-about .site-content .site-main .entry-content h2 {
         text-align: center;
         letter-spacing: 2px;
         font-size: 2rem; }
+
+/* Find Us */
+.post-82 {
+  margin-left: 10rem; }
+  .post-82 .entry-header .entry-title {
+    font-family: "Novecento-Bold";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.25rem; }
+  .post-82 .entry-content iframe {
+    width: 48rem;
+    height: 20rem; }

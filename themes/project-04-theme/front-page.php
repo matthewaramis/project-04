@@ -12,9 +12,19 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+	<header class="entry-header">
+		<?php the_title( '<h1 class="screen-reader-text">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
 
 			<?php endwhile; // End of the loop. ?>
+
+		<div class="home-hero">
+	
+		</div>
+
+		<p class="shop-stuff">Shop Stuff</p>
+
+		<p class="inhabitent-journal">Inhabitent Journal</p>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
