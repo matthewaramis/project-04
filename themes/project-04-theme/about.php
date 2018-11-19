@@ -3,7 +3,8 @@
  * The template for displaying all pages.
  *
  * @package RED_Starter_Theme
- */
+ * Template Name: About */
+
 
 get_header(); ?>
 

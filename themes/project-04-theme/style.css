@@ -848,3 +848,22 @@ object {
       color: #ffffff; }
     .site-main .entry-header .entry-meta .comments-link a:hover {
       color: #f0e4d1; }
+
+/* About Page */
+.site-content {
+  display: block; }
+  .site-content .site-main {
+    margin: 0; }
+    .site-content .site-main .entry-header {
+      width: 100vw;
+      height: 100vh; }
+      .site-content .site-main .entry-header .entry-title {
+        background: none;
+        font-size: 3rem;
+        top: 20rem; }
+    .site-content .site-main .entry-content {
+      margin: 3rem 20rem; }
+      .site-content .site-main .entry-content h2 {
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 2rem; }

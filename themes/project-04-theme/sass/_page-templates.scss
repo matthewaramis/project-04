@@ -63,3 +63,32 @@
     }
   }
 }
+
+/* About Page */
+.site-content {
+  display: block;
+  .site-main {
+    margin: 0;
+
+    .entry-header {
+      width: 100vw;
+      height: 100vh;
+
+      .entry-title {
+        background: none;
+        font-size: 3rem;
+        top: 20rem;
+      }
+    }
+
+    .entry-content {
+      margin: 3rem 20rem;
+
+      h2 {
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 2rem;
+      }
+    }
+  }
+}
