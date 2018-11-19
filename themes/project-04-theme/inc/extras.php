@@ -27,9 +27,37 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 */
 function inhabitent_excerpt_more($more) {
 	global $post;
- return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read more</a>';
+ return '<a class="read-more" href="'. get_permalink($post->ID) . '">Read more</a>';
 }
 add_filter('excerpt_more', 'inhabitent_excerpt_more');
+
+
+/**
+ * Filter the Product Archive Title
+ */
+function inhabitent_archive_title($title){
+	if( is_post_type_archive( 'product' )){
+		$title = 'Shop Stuff';
+	}elseif( is_tax( 'product_type' )){
+		$title = sprintf( '%1$s', single_term_title( '', false ));
+	}
+}
+
+add_filter( 'get_the_archive_title', 'inhabitent_archive_title' );
+
+function inhabitent_mod_post_type_archive( $query ){
+	if(
+		( is_post_type_archive( array( 'product' )) || $query->us_tax( 'product_type' ) )
+		&& !is_admin()
+		&& $query->is_main_query()
+	){
+		$query->set( 'orderby', 'title' );
+		$query->set( 'order', 'ASC' );
+		$query->set( 'posts_per_page', 16 );
+	}
+}
+
+add_action( 'pre_get_posts', 'inhabitent_mod_post_type_archive' );
 
 function my_login_logo() { ?>
 	<style type="text/css">
