@@ -485,11 +485,15 @@ h2 {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248a83;
+  text-transform: uppercase;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-family: "Novecento"; }
   a:visited {
-    color: purple; }
+    color: #248a83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #2f1339; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -497,51 +501,49 @@ a {
 
 /* Menus */
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  border-bottom: 1px #a1a1a1;
+  position: absolute; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
       position: absolute;
       top: 1.5rem;
-      left: -999rem;
       z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+
+.home-logo {
+  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat top/40%;
+  height: auto;
+  width: 8rem;
+  padding: 0 0 2.5rem 0;
+  position: absolute; }
 
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
-    display: block; } }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -697,22 +699,23 @@ a {
   grid-template-columns: 1fr 1fr 2fr;
   padding-top: 2rem;
   padding-bottom: 3rem;
-  font-family: 'Merriweather-Light'; }
+  font-family: "Merriweather-Light"; }
 
 .footerBold {
   font-family: 'Merriweather-Bold'; }
 
 h4 {
-  font-family: 'Novecento-Bold';
+  font-family: "Novecento-Bold";
   font-size: 1.25rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #d99054; }
 
 .footerContact {
-  margin: 1rem 2rem 0 8rem; }
+  margin: 1rem 2rem 0 7.25rem; }
   .footerContact p a {
-    text-decoration: none;
+    font-family: "Merriweather-Light";
+    text-transform: none;
     color: #ffffff; }
   .footerContact p i {
     font-size: 1.25rem;
@@ -732,7 +735,7 @@ h4 {
   margin: 3rem 0 0 18rem; }
 
 .footerCopy {
-  font-family: 'Novecento';
+  font-family: "Novecento";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -813,13 +816,25 @@ object {
   width: 100vw;
   height: 100vh; }
 
-.shop-stuff,
-.inhabitent-journal {
+.shop-stuff-header,
+.inhabitent-journal-header {
   font-family: "Novecento";
   text-align: center;
   text-transform: uppercase;
   font-size: 2.5rem;
   margin: 4rem 0; }
+
+.shop-stuff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center; }
+  .shop-stuff .frontpage-term {
+    width: 25%; }
+    .shop-stuff .frontpage-term img {
+      width: 25%; }
 
 /* Journal */
 .blog .site-main,
