@@ -5,6 +5,19 @@
 }
 
 .widget-area {
+  border-left: 1px solid $color__brand-lightgrey;
   margin-left: 4rem;
-  font-family: 'Merriweather-Light';
+  margin-top: 2.6rem;
+  font-family: $font__main;
+  .textwidget {
+    a {
+      font-family: $font__main;
+      text-transform: none;
+    }
+  }
+
+  .widget {
+    margin-left: 3rem;
+    margin-top: 3rem;
+  }
 }

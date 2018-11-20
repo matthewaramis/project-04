@@ -33,9 +33,12 @@ a {
 .main-navigation {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 100%;
-  border-bottom: 1px $color__brand-lightgrey;
+  height: 4rem;
   position: absolute;
+  //   padding-bottom: 1rem;
+  border-bottom: 1px solid $color__brand-lightgrey;
 
   ul {
     list-style: none;
@@ -44,7 +47,6 @@ a {
 
     ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      position: absolute;
       top: $base__space-unit;
       z-index: 99999;
 
@@ -55,14 +57,15 @@ a {
   }
 }
 
-.home-logo {
-  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat top/40%;
-  height: auto;
-  width: 8rem;
-  padding: 0 0 2.5rem 0;
-  position: absolute;
+.site-branding {
+  a {
+    height: auto;
+    width: 3rem;
+    margin-left: 7.5rem;
+    top: 3rem;
+    position: absolute;
+  }
 }
-
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {

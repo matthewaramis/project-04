@@ -107,3 +107,15 @@
     }
   })(container);
 })();
+
+// Sets nav menu to disappear and reappear on certain areas of the home page.
+(function() {
+  $(window).scroll(function() {
+    let heroTop = $('.home-hero').height();
+    if ($(this).scrollTop() >= heroTop) {
+      $('.top-navigation').removeClass('header-transparent');
+    } else {
+      $('.top-navigation').addClass('header-transparent');
+    }
+  });
+});
