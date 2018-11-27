@@ -21,17 +21,24 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
+				<div class="header-content">
 				<div class="site-branding">
-				<a href="/project-04">
+				<a href="/project-04" class="logo-link">
 					<img class="home-logo" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ?>">
 				</a>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
 
+				<div class="navigation-content">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
+
+				<?php get_search_form();?>
+				</div><!-- #navigation-content -->
+
+				</div><!-- #header-content -->
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

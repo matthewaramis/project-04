@@ -31,6 +31,8 @@ h4 {
   margin: 1rem 2rem 0 7.25rem;
 
   p {
+    display: flex;
+
     a {
       font-family: $font__main;
       text-transform: none;

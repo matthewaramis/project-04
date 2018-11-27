@@ -27,7 +27,7 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 */
 function inhabitent_excerpt_more($more) {
 	global $post;
- return '<a class="read-more" href="'. get_permalink($post->ID) . '">Read more</a>';
+ return '<p><a class="read-more" href="'. get_permalink($post->ID) . '">Read more &rarr;</a></p>';
 }
 add_filter('excerpt_more', 'inhabitent_excerpt_more');
 

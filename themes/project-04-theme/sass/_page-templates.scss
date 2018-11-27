@@ -10,6 +10,7 @@
     url(../../images/home-hero.jpg) no-repeat center/100%;
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 .shop-stuff-header,
@@ -21,15 +22,65 @@
   margin: 4rem 0;
 }
 
-.shop-stuff {
+.shop-info {
   display: flex;
-  justify-content: space-around;
-  text-align: center;
-  .frontpage-term {
-    width: 15%;
-    img {
-      width: 30%;
+  flex-direction: column;
+  width: 1120px;
+  margin: auto;
+
+  .shop-stuff {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    .frontpage-term {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 25%;
+      border: 1px solid $color__brand-lightgrey;
+      border-top: 5px solid $color__brand-lightgrey;
+      margin: 0 0.75rem;
+
+      img {
+        width: 30%;
+        margin-top: 1rem;
+      }
+
+      p {
+        padding: 0 1rem;
+      }
+
+      .shop-category-link {
+        background: $color__brand-green;
+        padding: 0.5rem 0;
+        margin: auto;
+        margin-bottom: 1rem;
+        width: 8rem;
+
+        a {
+          color: $color__background-body;
+        }
+      }
     }
+
+    .frontpage-term:hover {
+      border: 1px solid $color__brand-orange;
+      border-top: 5px solid $color__brand-orange;
+    }
+  }
+}
+
+.inhabitent-journal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1120px;
+
+  .journal-entry {
+    width: 30%;
+    margin: auto;
+    margin-top: 0;
   }
 }
 
@@ -94,6 +145,22 @@
           }
         }
       }
+    }
+  }
+
+  .entry-content {
+    .read-more {
+      font-size: 0.9rem;
+      color: $color__journal-read-more;
+      border: 1px solid $color__journal-read-more;
+      margin: 0;
+      padding: 0.75rem 1.5rem;
+    }
+
+    .read-more:hover {
+      color: $color__background-body;
+      background: $color__brand-green;
+      border: 1px solid $color__brand-green;
     }
   }
 }
