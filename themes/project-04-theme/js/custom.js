@@ -1,7 +1,15 @@
 (function($) {
   $(document).ready(function() {
-    //code goes here
-    //TO DO: Add search form toggle (focus and blur are key)
+    //toggle search
+    $('.icon-search').on('click', function() {
+      $('.search-form').addClass('search-show');
+      console.log('search toggle clicked');
+    });
+
+    $('.search-form').on('blur', function() {
+      $('.search-form').addClass('search-show');
+      console.log('blurred');
+    });
   });
 })(jQuery);
 
