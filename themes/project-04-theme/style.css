@@ -1275,3 +1275,68 @@ object {
           border: 1px solid #248a83; }
     .single-product .site-content .site-main .navigation {
       display: none; }
+
+/*      Archive Journal Page      */
+.archive-content .site-main {
+  margin-left: 10rem;
+  margin-top: 2.65rem; }
+  .archive-content .site-main .page-header .page-title {
+    font-family: "Novecento-Bold";
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 2rem 0;
+    padding: 0 0 2rem 0;
+    border-bottom: 1px solid #a1a1a1; }
+  .archive-content .site-main article {
+    margin: 3rem 0; }
+  .archive-content .site-main .entry-header {
+    position: relative; }
+    .archive-content .site-main .entry-header img {
+      width: 47.5rem;
+      height: auto; }
+    .archive-content .site-main .entry-header .entry-title {
+      position: absolute;
+      top: 0;
+      margin-top: 2.5rem;
+      padding: 0.25rem 1.75rem 0.25rem 1.75rem;
+      max-width: 75%;
+      line-height: 1.75;
+      font-family: "Novecento-Bold";
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #ffffff;
+      background: #248a83;
+      padding: 0.5rem 0 0.5rem 1.5rem; }
+      .archive-content .site-main .entry-header .entry-title a {
+        color: #ffffff;
+        text-decoration: none; }
+      .archive-content .site-main .entry-header .entry-title a:hover {
+        color: #f0e4d1; }
+    .archive-content .site-main .entry-header .entry-meta {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-right: 2.5rem;
+      margin-bottom: 0.35rem;
+      font-family: "Novecento";
+      text-transform: uppercase;
+      color: #ffffff;
+      background: #248a83; }
+      .archive-content .site-main .entry-header .entry-meta .comments-link a {
+        text-decoration: none;
+        color: #ffffff; }
+      .archive-content .site-main .entry-header .entry-meta .comments-link a:hover {
+        color: #f0e4d1; }
+
+.archive-content .entry-content .read-more {
+  font-size: 0.9rem;
+  color: #000000;
+  border: 1px solid #000000;
+  margin: 0;
+  padding: 0.75rem 1.5rem; }
+
+.archive-content .entry-content .read-more:hover {
+  color: #fff;
+  background: #248a83;
+  border: 1px solid #248a83; }

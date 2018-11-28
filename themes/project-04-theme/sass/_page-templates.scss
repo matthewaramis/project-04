@@ -509,3 +509,100 @@
     }
   }
 }
+
+/*      Archive Journal Page      */
+
+.archive-content {
+  .site-main {
+    margin-left: 10rem;
+    margin-top: 2.65rem;
+
+    .page-header {
+      .page-title {
+        font-family: $font__heading;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 0 0 2rem 0;
+        padding: 0 0 2rem 0;
+        border-bottom: 1px solid $color__brand-lightgrey;
+      }
+    }
+
+    article {
+      margin: 3rem 0;
+    }
+
+    .entry-header {
+      position: relative;
+
+      img {
+        width: 47.5rem;
+        height: auto;
+      }
+
+      .entry-title {
+        position: absolute;
+        top: 0;
+        margin-top: 2.5rem;
+        padding: 0.25rem 1.75rem 0.25rem 1.75rem;
+        max-width: 75%;
+        line-height: 1.75;
+        font-family: $font__heading;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #ffffff;
+        background: $color__brand-green;
+        padding: 0.5rem 0 0.5rem 1.5rem;
+
+        a {
+          color: #ffffff;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: $color__brand-yellow;
+        }
+      }
+
+      .entry-meta {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-right: 2.5rem;
+        margin-bottom: 0.35rem;
+        font-family: $font__accent;
+        text-transform: uppercase;
+        color: #ffffff;
+        background: $color__brand-green;
+
+        .comments-link {
+          a {
+            text-decoration: none;
+            color: #ffffff;
+          }
+
+          a:hover {
+            color: $color__brand-yellow;
+          }
+        }
+      }
+    }
+  }
+
+  .entry-content {
+    .read-more {
+      font-size: 0.9rem;
+      color: $color__journal-read-more;
+      border: 1px solid $color__journal-read-more;
+      margin: 0;
+      padding: 0.75rem 1.5rem;
+    }
+
+    .read-more:hover {
+      color: $color__background-body;
+      background: $color__brand-green;
+      border: 1px solid $color__brand-green;
+    }
+  }
+}
