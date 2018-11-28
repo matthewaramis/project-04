@@ -2,7 +2,7 @@
 /**
  * The template for displaying all pages.
  *
- * @package RED_Starter_Theme
+ * @package Matthew_Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -73,7 +73,7 @@ foreach($terms as $term): ?>
 		comments_number('0 Comments', '1 Comment', '% Comments');
 		?>
 </span>
-<a href=">?php echo get_the_permalink(); ?>">
+<a href="><?php echo get_the_permalink(); ?>">
 	<?php the_title(); ?>
 	</a>
 	<a class="read-more" href="<?php echo get_the_permalink(); ?>">

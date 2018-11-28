@@ -2,7 +2,7 @@
 /**
  * Template part for displaying posts.
  *
- * @package RED_Starter_Theme
+ * @package Matthew_Inhabitent_Theme
  */
 
 ?>
@@ -10,9 +10,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
         <?php if ( has_post_thumbnail() ) : ?>
+        <div class="thumbnail-mask">
         <a href="<?php echo get_the_permalink(); ?>">
             <?php the_post_thumbnail( 'large' ); ?>
         </a>
+        </div>
 		<?php endif; ?>
 
         <div class="product-info">

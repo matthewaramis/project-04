@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying taxonomy product archive pages.
  *
- * @package RED_Starter_Theme
+ * @package Matthew_Inhabitent_Theme
  */
 
 get_header(); ?>

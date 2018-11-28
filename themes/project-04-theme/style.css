@@ -932,6 +932,9 @@ object {
         width: 8rem; }
         .shop-info .shop-stuff .frontpage-term .shop-category-link a {
           color: #fff; }
+      .shop-info .shop-stuff .frontpage-term .shop-category-link:hover {
+        background: #1d625d;
+        cursor: pointer; }
     .shop-info .shop-stuff .frontpage-term:hover {
       border: 1px solid #d99054;
       border-top: 5px solid #d99054; }
@@ -1091,11 +1094,20 @@ object {
       margin: 3rem 0 0 0; }
       .post-type-archive-product .site-content .site-main article .entry-header {
         border: 1px solid #a1a1a1; }
+        .post-type-archive-product .site-content .site-main article .entry-header .thumbnail-mask {
+          position: relative;
+          height: 225px;
+          overflow: hidden;
+          border-bottom: 5px solid #a1a1a1; }
         .post-type-archive-product .site-content .site-main article .entry-header a {
           margin: 0; }
           .post-type-archive-product .site-content .site-main article .entry-header a img {
-            height: 225px;
-            border-bottom: 5px solid #a1a1a1; }
+            position: absolute;
+            -webkit-transform: scale(0.7) translate(5%, 5%);
+                    transform: scale(0.7) translate(5%, 5%);
+            max-width: none;
+            top: -45%;
+            left: -75%; }
         .post-type-archive-product .site-content .site-main article .entry-header .product-info {
           display: -webkit-box;
           display: -ms-flexbox;
