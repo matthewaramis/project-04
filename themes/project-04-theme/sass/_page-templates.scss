@@ -81,11 +81,57 @@
   justify-content: center;
   align-items: center;
   width: 1120px;
+  margin: auto;
+  margin-bottom: 3rem;
 
   .journal-entry {
-    width: 30%;
+    border: 1px solid $color__brand-lightgrey;
+    width: 31%;
     margin: auto;
     margin-top: 0;
+
+    .wp-post-image {
+      border-bottom: 5px solid $color__brand-lightgrey;
+      height: 245px;
+      width: 100%;
+    }
+
+    .journal-post-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 0.75rem;
+
+      .entry-meta {
+        color: $color__brand-mediumgrey;
+        font-size: 0.75rem;
+      }
+
+      a {
+        font-family: $font__heading;
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      .read-more {
+        font-family: $font__accent;
+        font-size: 0.9rem;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        color: $color__journal-read-more;
+        padding: 0.75rem 1.5rem;
+        margin-top: 1rem;
+        width: 45%;
+        border: 1px solid $color__journal-read-more;
+      }
+
+      .read-more:hover {
+        background: $color__brand-green;
+        color: $color__background-body;
+        border: 1px solid $color__brand-green;
+      }
+    }
   }
 }
 
@@ -219,6 +265,26 @@
     iframe {
       width: 48rem;
       height: 20rem;
+    }
+
+    .wpcf7-form {
+      p {
+        .wpcf7-submit {
+          background: $color__brand-green;
+          color: $color__background-body;
+          border: 1px solid $color__brand-green;
+          border-radius: 0;
+          padding: 0.75rem 1.5rem;
+          font-size: 0.9rem;
+          text-shadow: none;
+          box-shadow: none;
+        }
+
+        .wpcf7-submit:hover {
+          background: #1d625d;
+          border: 1px solid #1d625d;
+        }
+      }
     }
   }
 }
@@ -498,6 +564,7 @@
               background: $color__brand-green;
               color: $color__background-body;
               border: 1px solid $color__brand-green;
+              text-shadow: none;
             }
           }
         }
@@ -603,6 +670,142 @@
       color: $color__background-body;
       background: $color__brand-green;
       border: 1px solid $color__brand-green;
+    }
+  }
+}
+
+/*      Single Journal Post Page      */
+
+.cat-links,
+.tags-links {
+  font-family: $font__accent;
+  text-transform: uppercase;
+}
+
+.navigation {
+  display: none;
+}
+
+.social-links {
+  button {
+    background: $color__background-body;
+    box-shadow: none;
+    border: 1px solid $color__journal-read-more;
+    border-radius: 0;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    font-family: $font__accent;
+    font-size: 0.9rem;
+
+    .fab {
+      margin-right: 0.25rem;
+    }
+  }
+
+  button:hover {
+    background: $color__brand-green;
+    color: $color__background-body;
+    border: 1px solid $color__brand-green;
+    text-shadow: none;
+  }
+}
+
+.comments-area {
+  .comment-list {
+    .comment {
+      .comment-body {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $color__brand-lightgrey;
+
+        .comment-author-avatar {
+          .avatar {
+            border: 1px solid $color__background-body;
+            border-radius: 35px;
+          }
+        }
+
+        .comment-content {
+          .comment-meta {
+            .comment-author {
+              .fn {
+                font-family: 'Merriweather-Bold';
+                font-style: normal;
+              }
+            }
+
+            .comment-metadata {
+              color: $color__brand-lightgrey;
+            }
+          }
+
+          .reply {
+            .comment-reply-link {
+              font-family: $font__main;
+              text-transform: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .comment-respond {
+    .comment-reply-title {
+      font-family: $font__heading;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .comment-form {
+      .comment-form-comment {
+        textarea {
+          background: $color__comment-area;
+        }
+      }
+
+      .comment-form-author {
+        width: 48%;
+
+        input {
+          background: $color__comment-area;
+        }
+      }
+
+      .comment-form-email {
+        width: 48%;
+
+        input {
+          background: $color__comment-area;
+        }
+      }
+
+      .comment-form-url {
+        input {
+          width: 100%;
+          background: $color__comment-area;
+        }
+      }
+
+      .form-submit {
+        .submit {
+          font-family: $font__accent;
+          font-size: 0.9rem;
+          text-shadow: none;
+          text-transform: uppercase;
+          background: $color__brand-green;
+          box-shadow: none;
+          border: $color__brand-green;
+          border-radius: 0;
+          padding: 0.75rem 1.5rem;
+          color: $color__background-body;
+        }
+
+        .submit:hover {
+          background: #1d625d;
+        }
+      }
     }
   }
 }

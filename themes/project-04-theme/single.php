@@ -14,6 +14,21 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
+			<div class="social-links">
+                    <button type="button" class='btn inverse-btn'>
+                        <i class='fab fa-facebook'></i>
+                        Like
+                    </button>
+                    <button type="button" class='btn inverse-btn'>
+                        <i class='fab fa-twitter'></i>
+                        Tweet
+                    </button>
+                    <button type="button" class='btn inverse-btn'>
+                        <i class='fab fa-pinterest'></i>
+                        Pin
+                    </button>
+            </div>
+
 			<?php the_post_navigation(); ?>
 
 			<?php

@@ -66,6 +66,7 @@ foreach($terms as $term): ?>
 			the_post_thumbnail('large');
 		}
 		?>
+<div class="journal-post-content-wrapper">
 		<span class="entry-meta">
 		<?php
 		red_starter_posted_on();
@@ -73,12 +74,14 @@ foreach($terms as $term): ?>
 		comments_number('0 Comments', '1 Comment', '% Comments');
 		?>
 </span>
+
 <a href="><?php echo get_the_permalink(); ?>">
 	<?php the_title(); ?>
 	</a>
 	<a class="read-more" href="<?php echo get_the_permalink(); ?>">
-	Read more
+	Read Entry
 	</a>
+</div>
 	</article>
 	<?php endforeach; wp_reset_postdata(); ?>
 

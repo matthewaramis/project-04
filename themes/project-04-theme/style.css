@@ -950,11 +950,50 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1120px; }
+  width: 1120px;
+  margin: auto;
+  margin-bottom: 3rem; }
   .inhabitent-journal .journal-entry {
-    width: 30%;
+    border: 1px solid #a1a1a1;
+    width: 31%;
     margin: auto;
     margin-top: 0; }
+    .inhabitent-journal .journal-entry .wp-post-image {
+      border-bottom: 5px solid #a1a1a1;
+      height: 245px;
+      width: 100%; }
+    .inhabitent-journal .journal-entry .journal-post-content-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 0.75rem; }
+      .inhabitent-journal .journal-entry .journal-post-content-wrapper .entry-meta {
+        color: #808080;
+        font-size: 0.75rem; }
+      .inhabitent-journal .journal-entry .journal-post-content-wrapper a {
+        font-family: "Novecento-Bold";
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 0; }
+      .inhabitent-journal .journal-entry .journal-post-content-wrapper .read-more {
+        font-family: "Novecento";
+        font-size: 0.9rem;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        color: #000000;
+        padding: 0.75rem 1.5rem;
+        margin-top: 1rem;
+        width: 45%;
+        border: 1px solid #000000; }
+      .inhabitent-journal .journal-entry .journal-post-content-wrapper .read-more:hover {
+        background: #248a83;
+        color: #fff;
+        border: 1px solid #248a83; }
 
 /*      Journal      */
 .blog .site-main,
@@ -1052,6 +1091,19 @@ object {
   .post-82 .entry-content iframe {
     width: 48rem;
     height: 20rem; }
+  .post-82 .entry-content .wpcf7-form p .wpcf7-submit {
+    background: #248a83;
+    color: #fff;
+    border: 1px solid #248a83;
+    border-radius: 0;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .post-82 .entry-content .wpcf7-form p .wpcf7-submit:hover {
+    background: #1d625d;
+    border: 1px solid #1d625d; }
 
 /*      Shop Page      */
 .post-type-archive-product .site-content {
@@ -1272,7 +1324,8 @@ object {
         .single-product .site-content .site-main .type-product .product-content-wrapper .social-links button:hover {
           background: #248a83;
           color: #fff;
-          border: 1px solid #248a83; }
+          border: 1px solid #248a83;
+          text-shadow: none; }
     .single-product .site-content .site-main .navigation {
       display: none; }
 
@@ -1340,3 +1393,86 @@ object {
   color: #fff;
   background: #248a83;
   border: 1px solid #248a83; }
+
+/*      Single Journal Post Page      */
+.cat-links,
+.tags-links {
+  font-family: "Novecento";
+  text-transform: uppercase; }
+
+.navigation {
+  display: none; }
+
+.social-links button {
+  background: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #000000;
+  border-radius: 0;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  font-family: "Novecento";
+  font-size: 0.9rem; }
+  .social-links button .fab {
+    margin-right: 0.25rem; }
+
+.social-links button:hover {
+  background: #248a83;
+  color: #fff;
+  border: 1px solid #248a83;
+  text-shadow: none; }
+
+.comments-area .comment-list .comment .comment-body {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #a1a1a1; }
+  .comments-area .comment-list .comment .comment-body .comment-author-avatar .avatar {
+    border: 1px solid #fff;
+    border-radius: 35px; }
+  .comments-area .comment-list .comment .comment-body .comment-content .comment-meta .comment-author .fn {
+    font-family: 'Merriweather-Bold';
+    font-style: normal; }
+  .comments-area .comment-list .comment .comment-body .comment-content .comment-meta .comment-metadata {
+    color: #a1a1a1; }
+  .comments-area .comment-list .comment .comment-body .comment-content .reply .comment-reply-link {
+    font-family: "Merriweather-Light";
+    text-transform: none; }
+
+.comments-area .comment-respond .comment-reply-title {
+  font-family: "Novecento-Bold";
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.comments-area .comment-respond .comment-form .comment-form-comment textarea {
+  background: #ececec; }
+
+.comments-area .comment-respond .comment-form .comment-form-author {
+  width: 48%; }
+  .comments-area .comment-respond .comment-form .comment-form-author input {
+    background: #ececec; }
+
+.comments-area .comment-respond .comment-form .comment-form-email {
+  width: 48%; }
+  .comments-area .comment-respond .comment-form .comment-form-email input {
+    background: #ececec; }
+
+.comments-area .comment-respond .comment-form .comment-form-url input {
+  width: 100%;
+  background: #ececec; }
+
+.comments-area .comment-respond .comment-form .form-submit .submit {
+  font-family: "Novecento";
+  font-size: 0.9rem;
+  text-shadow: none;
+  text-transform: uppercase;
+  background: #248a83;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: #248a83;
+  border-radius: 0;
+  padding: 0.75rem 1.5rem;
+  color: #fff; }
+
+.comments-area .comment-respond .comment-form .form-submit .submit:hover {
+  background: #1d625d; }
