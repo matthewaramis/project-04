@@ -83,10 +83,11 @@ foreach($terms as $term): ?>
 	</a>
 </div>
 	</article>
+	
 	<?php endforeach; wp_reset_postdata(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
-	</section>
+</section>

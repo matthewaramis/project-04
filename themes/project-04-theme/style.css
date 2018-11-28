@@ -917,8 +917,8 @@ object {
           -ms-flex-align: center;
               align-items: center;
       width: 25%;
-      border: 1px solid #a1a1a1;
-      border-top: 5px solid #a1a1a1;
+      border: 1px solid #ececec;
+      border-top: 5px solid #ececec;
       margin: 0 0.75rem; }
       .shop-info .shop-stuff .frontpage-term img {
         width: 30%;
@@ -954,12 +954,12 @@ object {
   margin: auto;
   margin-bottom: 3rem; }
   .inhabitent-journal .journal-entry {
-    border: 1px solid #a1a1a1;
+    border: 1px solid #ececec;
     width: 31%;
     margin: auto;
     margin-top: 0; }
     .inhabitent-journal .journal-entry .wp-post-image {
-      border-bottom: 5px solid #a1a1a1;
+      border-bottom: 5px solid #ececec;
       height: 245px;
       width: 100%; }
     .inhabitent-journal .journal-entry .journal-post-content-wrapper {
@@ -1135,7 +1135,7 @@ object {
           -ms-flex-align: center;
               align-items: center;
       font-size: 1.25rem;
-      border-bottom: 1px dashed #a1a1a1; }
+      border-bottom: 1px dashed #ececec; }
       .post-type-archive-product .site-content .site-main .product-term p {
         margin: 1rem 1rem 3rem 1rem; }
     .post-type-archive-product .site-content .site-main .grid {
@@ -1146,12 +1146,12 @@ object {
     .post-type-archive-product .site-content .site-main article {
       margin: 3rem 0 0 0; }
       .post-type-archive-product .site-content .site-main article .entry-header {
-        border: 1px solid #a1a1a1; }
+        border: 1px solid #ececec; }
         .post-type-archive-product .site-content .site-main article .entry-header .thumbnail-mask {
           position: relative;
           height: 225px;
           overflow: hidden;
-          border-bottom: 5px solid #a1a1a1; }
+          border-bottom: 5px solid #ececec; }
         .post-type-archive-product .site-content .site-main article .entry-header a {
           margin: 0; }
           .post-type-archive-product .site-content .site-main article .entry-header a img {
@@ -1199,7 +1199,7 @@ object {
     width: 1120px; }
     .tax-product_type .site-content .site-main .page-header .taxonomy-description {
       padding: 0 0 1rem 0;
-      border-bottom: 1px dashed #a1a1a1; }
+      border-bottom: 1px dashed #ececec; }
       .tax-product_type .site-content .site-main .page-header .taxonomy-description p {
         text-align: center; }
     .tax-product_type .site-content .site-main .page-title {
@@ -1221,7 +1221,7 @@ object {
           -ms-flex-align: center;
               align-items: center;
       font-size: 1.25rem;
-      border-bottom: 1px dashed #a1a1a1; }
+      border-bottom: 1px dashed #ececec; }
       .tax-product_type .site-content .site-main .product-term p {
         margin: 1rem 1rem 3rem 1rem; }
     .tax-product_type .site-content .site-main .grid {
@@ -1232,12 +1232,12 @@ object {
     .tax-product_type .site-content .site-main article {
       margin: 3rem 0 0 0; }
       .tax-product_type .site-content .site-main article .entry-header {
-        border: 1px solid #a1a1a1; }
+        border: 1px solid #ececec; }
         .tax-product_type .site-content .site-main article .entry-header .thumbnail-mask {
           position: relative;
           height: 225px;
           overflow: hidden;
-          border-bottom: 5px solid #a1a1a1; }
+          border-bottom: 5px solid #ececec; }
         .tax-product_type .site-content .site-main article .entry-header a {
           margin: 0; }
           .tax-product_type .site-content .site-main article .entry-header a img {
@@ -1340,7 +1340,7 @@ object {
     text-transform: uppercase;
     margin: 0 0 2rem 0;
     padding: 0 0 2rem 0;
-    border-bottom: 1px solid #a1a1a1; }
+    border-bottom: 1px solid #ececec; }
   .archive-content .site-main article {
     margin: 3rem 0; }
   .archive-content .site-main .entry-header {
@@ -1425,7 +1425,7 @@ object {
 .comments-area .comment-list .comment .comment-body {
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #a1a1a1; }
+  border-bottom: 1px solid #ececec; }
   .comments-area .comment-list .comment .comment-body .comment-author-avatar .avatar {
     border: 1px solid #fff;
     border-radius: 35px; }

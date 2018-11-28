@@ -38,8 +38,8 @@
       flex-direction: column;
       align-items: center;
       width: 25%;
-      border: 1px solid $color__brand-lightgrey;
-      border-top: 5px solid $color__brand-lightgrey;
+      border: 1px solid $color__comment-area;
+      border-top: 5px solid $color__comment-area;
       margin: 0 0.75rem;
 
       img {
@@ -85,13 +85,13 @@
   margin-bottom: 3rem;
 
   .journal-entry {
-    border: 1px solid $color__brand-lightgrey;
+    border: 1px solid $color__comment-area;
     width: 31%;
     margin: auto;
     margin-top: 0;
 
     .wp-post-image {
-      border-bottom: 5px solid $color__brand-lightgrey;
+      border-bottom: 5px solid $color__comment-area;
       height: 245px;
       width: 100%;
     }
@@ -315,7 +315,7 @@
         justify-content: center;
         align-items: center;
         font-size: 1.25rem;
-        border-bottom: 1px dashed $color__brand-lightgrey;
+        border-bottom: 1px dashed $color__comment-area;
 
         p {
           margin: 1rem 1rem 3rem 1rem;
@@ -333,13 +333,13 @@
         margin: 3rem 0 0 0;
 
         .entry-header {
-          border: 1px solid $color__brand-lightgrey;
+          border: 1px solid $color__comment-area;
 
           .thumbnail-mask {
             position: relative;
             height: 225px;
             overflow: hidden;
-            border-bottom: 5px solid $color__brand-lightgrey;
+            border-bottom: 5px solid $color__comment-area;
           }
 
           a {
@@ -399,7 +399,7 @@
       .page-header {
         .taxonomy-description {
           padding: 0 0 1rem 0;
-          border-bottom: 1px dashed $color__brand-lightgrey;
+          border-bottom: 1px dashed $color__comment-area;
 
           p {
             text-align: center;
@@ -422,7 +422,7 @@
         justify-content: center;
         align-items: center;
         font-size: 1.25rem;
-        border-bottom: 1px dashed $color__brand-lightgrey;
+        border-bottom: 1px dashed $color__comment-area;
 
         p {
           margin: 1rem 1rem 3rem 1rem;
@@ -440,13 +440,13 @@
         margin: 3rem 0 0 0;
 
         .entry-header {
-          border: 1px solid $color__brand-lightgrey;
+          border: 1px solid $color__comment-area;
 
           .thumbnail-mask {
             position: relative;
             height: 225px;
             overflow: hidden;
-            border-bottom: 5px solid $color__brand-lightgrey;
+            border-bottom: 5px solid $color__comment-area;
           }
 
           a {
@@ -592,7 +592,7 @@
         text-transform: uppercase;
         margin: 0 0 2rem 0;
         padding: 0 0 2rem 0;
-        border-bottom: 1px solid $color__brand-lightgrey;
+        border-bottom: 1px solid $color__comment-area;
       }
     }
 
@@ -716,7 +716,7 @@
       .comment-body {
         margin-bottom: 2rem;
         padding-bottom: 2rem;
-        border-bottom: 1px solid $color__brand-lightgrey;
+        border-bottom: 1px solid $color__comment-area;
 
         .comment-author-avatar {
           .avatar {
@@ -765,7 +765,6 @@
       .comment-form-comment {
         display: flex;
         flex-direction: column;
-        // justify-content: space-between;
 
         textarea {
           background: $color__comment-area;
