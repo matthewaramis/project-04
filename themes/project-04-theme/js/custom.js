@@ -1,18 +1,15 @@
 (function($) {
   $(document).ready(function() {
     //toggle search
-    $('.search-form').hide();
+    $('.navigation-content .search-form').hide();
 
-    $('.icon-search').on('click', function() {
-      $('.search-form').toggle('slow');
-      $('.search-field').focus();
+    $('.navigation-content .icon-search').on('click', function() {
+      $('.navigation-content .search-form').toggle('slow');
+      $('.navigation-content .search-field').focus();
     });
 
-    $('.search-field').on('blur', function() {
-      $('.search-form').toggle('slow');
+    $('.navigation-content .search-field').on('blur', function() {
+      $('.navigation-content .search-form').toggle('slow');
     });
   });
 })(jQuery);
-
-//IIFE
-//Immediately Invoked Function Expression
