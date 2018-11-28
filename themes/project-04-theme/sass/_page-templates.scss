@@ -2,7 +2,7 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/*      Front page      */
 
 .home-hero {
   background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center,
@@ -89,7 +89,7 @@
   }
 }
 
-/* Journal */
+/*      Journal      */
 
 .blog,
 .single-post {
@@ -170,7 +170,7 @@
   }
 }
 
-/* About Page */
+/*      About Page      */
 
 .page-template-about {
   .site-content {
@@ -202,7 +202,7 @@
   }
 }
 
-/* Find Us */
+/*      Find Us      */
 
 .post-82 {
   margin-left: 10rem;
@@ -223,7 +223,8 @@
   }
 }
 
-/* Shop Page */
+/*      Shop Page      */
+
 .post-type-archive-product {
   .site-content {
     display: flex;
@@ -312,6 +313,197 @@
       }
 
       .entry-content {
+        display: none;
+      }
+    }
+  }
+}
+
+/*      Product Taxonomy Page      */
+
+.tax-product_type {
+  .site-content {
+    display: flex;
+    justify-content: center;
+
+    .site-main {
+      display: block;
+      width: 1120px;
+
+      .page-header {
+        .taxonomy-description {
+          padding: 0 0 1rem 0;
+          border-bottom: 1px dashed $color__brand-lightgrey;
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+
+      .page-title {
+        text-transform: uppercase;
+        font-family: $font__heading;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 3rem;
+      }
+
+      .product-term {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25rem;
+        border-bottom: 1px dashed $color__brand-lightgrey;
+
+        p {
+          margin: 1rem 1rem 3rem 1rem;
+        }
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1.25rem;
+        margin-bottom: 4rem;
+      }
+
+      article {
+        margin: 3rem 0 0 0;
+
+        .entry-header {
+          border: 1px solid $color__brand-lightgrey;
+
+          .thumbnail-mask {
+            position: relative;
+            height: 225px;
+            overflow: hidden;
+            border-bottom: 5px solid $color__brand-lightgrey;
+          }
+
+          a {
+            margin: 0;
+
+            img {
+              position: absolute;
+              transform: scale(0.7) translate(5%, 5%);
+              max-width: none;
+              top: -45%;
+              left: -75%;
+            }
+          }
+
+          .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0 1rem 0;
+            margin: 0 1rem;
+
+            .entry-title {
+              margin: 0;
+              font-size: 1.25rem;
+
+              a {
+                color: $color__journal-read-more;
+                font-family: $font__main;
+                font-size: 1rem;
+                font-weight: 500;
+                text-transform: none;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .entry-content {
+        display: none;
+      }
+    }
+  }
+}
+
+/*      Single Product Page      */
+
+.single-product {
+  .site-content {
+    display: block;
+    width: 1120px;
+    margin: auto;
+
+    .widget-area {
+      display: none;
+    }
+
+    .site-main {
+      margin: 4rem 0;
+
+      .type-product {
+        display: flex;
+        justify-content: space-between;
+
+        .header-wrapper {
+          width: 48%;
+          .entry-header {
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+
+        .product-content-wrapper {
+          width: 48%;
+
+          .entry-title {
+            font-family: $font__heading;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $color__brand-orange;
+            margin-top: 0;
+          }
+
+          .entry-content {
+            font-family: $font__accent;
+            font-size: 2rem;
+
+            p {
+              font-family: $font__main;
+              font-size: 1rem;
+              line-height: 1.75;
+            }
+          }
+
+          .social-links {
+            button {
+              background: $color__background-body;
+              box-shadow: none;
+              border: 1px solid $color__journal-read-more;
+              border-radius: 0;
+              padding: 0.75rem 1.5rem;
+              text-transform: uppercase;
+              font-family: $font__accent;
+              font-size: 0.9rem;
+
+              .fab {
+                margin-right: 0.25rem;
+              }
+            }
+
+            button:hover {
+              background: $color__brand-green;
+              color: $color__background-body;
+              border: 1px solid $color__brand-green;
+            }
+          }
+        }
+      }
+
+      .navigation {
         display: none;
       }
     }

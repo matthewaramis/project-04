@@ -41,8 +41,8 @@ function inhabitent_archive_title($title){
 	}elseif( is_tax( 'product_type' )){
 		$title = sprintf( '%1$s', single_term_title( '', false ));
 	}
+	return $title;
 }
-
 add_filter( 'get_the_archive_title', 'inhabitent_archive_title' );
 
 function inhabitent_mod_post_type_archive( $query ){
@@ -56,6 +56,7 @@ function inhabitent_mod_post_type_archive( $query ){
 		$query->set( 'posts_per_page', 16 );
 	}
 }
+add_action( 'pre_get_posts', 'inhabitent_mod_post_type_archive' );
 
 /**
  * Custom Hero Image for the About Page 
@@ -97,8 +98,6 @@ function inhabitent_hero_banner(){
   }
   add_action('wp_enqueue_scripts', 'inhabitent_hero_banner');
   
-
-add_action( 'pre_get_posts', 'inhabitent_mod_post_type_archive' );
 
 function my_login_logo() { ?>
 	<style type="text/css">

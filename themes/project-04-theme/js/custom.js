@@ -1,14 +1,15 @@
 (function($) {
   $(document).ready(function() {
     //toggle search
+    $('.search-form').hide();
+
     $('.icon-search').on('click', function() {
-      $('.search-form').addClass('search-show');
-      console.log('search toggle clicked');
+      $('.search-form').toggle('slow');
+      $('.search-field').focus();
     });
 
-    $('.search-form').on('blur', function() {
-      $('.search-form').addClass('search-show');
-      console.log('blurred');
+    $('.search-field').on('blur', function() {
+      $('.search-form').toggle('slow');
     });
   });
 })(jQuery);

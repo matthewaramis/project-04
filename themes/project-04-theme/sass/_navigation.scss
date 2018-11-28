@@ -33,6 +33,7 @@ a {
 .navigation-content {
   display: flex;
   align-items: center;
+  margin-right: 10rem;
 
   .main-navigation {
     display: flex;
@@ -78,22 +79,22 @@ a {
     }
   }
 
+  .icon-search {
+    color: $color__brand-green;
+  }
+
   .search-form {
     position: relative;
 
     fieldset {
       border: none;
-      padding: 0.35em 0.625em 0.35em;
+      padding: 0.35em 0.625em 0.35em 0em;
 
       .search-submit {
         border: none;
         box-shadow: none;
-        padding: 0.6rem 0.25rem 0.4rem;
+        padding: 0;
         background: $color__background-body;
-
-        .icon-search {
-          color: $color__brand-green;
-        }
       }
 
       input[type='search'] {

@@ -506,7 +506,8 @@ a {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-right: 10rem; }
   .navigation-content .main-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -552,19 +553,19 @@ a {
     .header-content .site-branding .logo-link {
       height: auto;
       width: 3rem; }
+  .header-content .icon-search {
+    color: #248a83; }
   .header-content .search-form {
     position: relative; }
     .header-content .search-form fieldset {
       border: none;
-      padding: 0.35em 0.625em 0.35em; }
+      padding: 0.35em 0.625em 0.35em 0em; }
       .header-content .search-form fieldset .search-submit {
         border: none;
         -webkit-box-shadow: none;
                 box-shadow: none;
-        padding: 0.6rem 0.25rem 0.4rem;
+        padding: 0;
         background: #fff; }
-        .header-content .search-form fieldset .search-submit .icon-search {
-          color: #248a83; }
       .header-content .search-form fieldset input[type='search'] {
         border: none;
         font-family: "Novecento"; }
@@ -733,7 +734,7 @@ a {
   .widget-area .textwidget span {
     margin-left: 0.5rem; }
   .widget-area .inhabitent-business-hours-class p span {
-    font-weight: 700; }
+    font-family: 'Merriweather-Bold'; }
   .widget-area .widget_archive ul {
     margin: 0;
     padding: 0; }
@@ -871,7 +872,7 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+/*      Front page      */
 .home-hero {
   background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center, -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/home-hero.jpg) no-repeat center/100%;
   background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center, linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg) no-repeat center/100%;
@@ -955,7 +956,7 @@ object {
     margin: auto;
     margin-top: 0; }
 
-/* Journal */
+/*      Journal      */
 .blog .site-main,
 .single-post .site-main {
   margin-left: 10rem;
@@ -1021,7 +1022,7 @@ object {
   background: #248a83;
   border: 1px solid #248a83; }
 
-/* About Page */
+/*      About Page      */
 .page-template-about .site-content {
   display: block; }
   .page-template-about .site-content .site-main {
@@ -1040,7 +1041,7 @@ object {
         letter-spacing: 2px;
         font-size: 2rem; }
 
-/* Find Us */
+/*      Find Us      */
 .post-82 {
   margin-left: 10rem; }
   .post-82 .entry-header .entry-title {
@@ -1052,7 +1053,7 @@ object {
     width: 48rem;
     height: 20rem; }
 
-/* Shop Page */
+/*      Shop Page      */
 .post-type-archive-product .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1131,4 +1132,146 @@ object {
               text-transform: none;
               margin: 0; }
     .post-type-archive-product .site-content .site-main .entry-content {
+      display: none; }
+
+/*      Product Taxonomy Page      */
+.tax-product_type .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .tax-product_type .site-content .site-main {
+    display: block;
+    width: 1120px; }
+    .tax-product_type .site-content .site-main .page-header .taxonomy-description {
+      padding: 0 0 1rem 0;
+      border-bottom: 1px dashed #a1a1a1; }
+      .tax-product_type .site-content .site-main .page-header .taxonomy-description p {
+        text-align: center; }
+    .tax-product_type .site-content .site-main .page-title {
+      text-transform: uppercase;
+      font-family: "Novecento-Bold";
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-bottom: 0;
+      margin-top: 3rem; }
+    .tax-product_type .site-content .site-main .product-term {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 1.25rem;
+      border-bottom: 1px dashed #a1a1a1; }
+      .tax-product_type .site-content .site-main .product-term p {
+        margin: 1rem 1rem 3rem 1rem; }
+    .tax-product_type .site-content .site-main .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 1.25rem;
+      margin-bottom: 4rem; }
+    .tax-product_type .site-content .site-main article {
+      margin: 3rem 0 0 0; }
+      .tax-product_type .site-content .site-main article .entry-header {
+        border: 1px solid #a1a1a1; }
+        .tax-product_type .site-content .site-main article .entry-header .thumbnail-mask {
+          position: relative;
+          height: 225px;
+          overflow: hidden;
+          border-bottom: 5px solid #a1a1a1; }
+        .tax-product_type .site-content .site-main article .entry-header a {
+          margin: 0; }
+          .tax-product_type .site-content .site-main article .entry-header a img {
+            position: absolute;
+            -webkit-transform: scale(0.7) translate(5%, 5%);
+                    transform: scale(0.7) translate(5%, 5%);
+            max-width: none;
+            top: -45%;
+            left: -75%; }
+        .tax-product_type .site-content .site-main article .entry-header .product-info {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          padding: 0.75rem 0 1rem 0;
+          margin: 0 1rem; }
+          .tax-product_type .site-content .site-main article .entry-header .product-info .entry-title {
+            margin: 0;
+            font-size: 1.25rem; }
+            .tax-product_type .site-content .site-main article .entry-header .product-info .entry-title a {
+              color: #000000;
+              font-family: "Merriweather-Light";
+              font-size: 1rem;
+              font-weight: 500;
+              text-transform: none;
+              margin: 0; }
+    .tax-product_type .site-content .site-main .entry-content {
+      display: none; }
+
+/*      Single Product Page      */
+.single-product .site-content {
+  display: block;
+  width: 1120px;
+  margin: auto; }
+  .single-product .site-content .widget-area {
+    display: none; }
+  .single-product .site-content .site-main {
+    margin: 4rem 0; }
+    .single-product .site-content .site-main .type-product {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .single-product .site-content .site-main .type-product .header-wrapper {
+        width: 48%; }
+        .single-product .site-content .site-main .type-product .header-wrapper .entry-header img {
+          width: 100%;
+          height: auto; }
+      .single-product .site-content .site-main .type-product .product-content-wrapper {
+        width: 48%; }
+        .single-product .site-content .site-main .type-product .product-content-wrapper .entry-title {
+          font-family: "Novecento-Bold";
+          font-size: 2.5rem;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          color: #d99054;
+          margin-top: 0; }
+        .single-product .site-content .site-main .type-product .product-content-wrapper .entry-content {
+          font-family: "Novecento";
+          font-size: 2rem; }
+          .single-product .site-content .site-main .type-product .product-content-wrapper .entry-content p {
+            font-family: "Merriweather-Light";
+            font-size: 1rem;
+            line-height: 1.75; }
+        .single-product .site-content .site-main .type-product .product-content-wrapper .social-links button {
+          background: #fff;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          border: 1px solid #000000;
+          border-radius: 0;
+          padding: 0.75rem 1.5rem;
+          text-transform: uppercase;
+          font-family: "Novecento";
+          font-size: 0.9rem; }
+          .single-product .site-content .site-main .type-product .product-content-wrapper .social-links button .fab {
+            margin-right: 0.25rem; }
+        .single-product .site-content .site-main .type-product .product-content-wrapper .social-links button:hover {
+          background: #248a83;
+          color: #fff;
+          border: 1px solid #248a83; }
+    .single-product .site-content .site-main .navigation {
       display: none; }
