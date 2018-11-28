@@ -895,3 +895,55 @@
     }
   }
 }
+
+/*      Search Page      */
+
+.search-results {
+  .content-area {
+    width: 800px;
+    margin: 1rem 0 2rem 10rem;
+
+    .page-header {
+      .page-title {
+        font-family: $font__heading;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $color__comment-area;
+      }
+    }
+
+    article {
+      margin-bottom: 5rem;
+
+      .entry-header {
+        .entry-title {
+          a {
+            margin: 0;
+            font-family: $font__heading;
+            font-size: 2rem;
+            letter-spacing: 2px;
+          }
+        }
+      }
+
+      .entry-summary {
+        p {
+          .read-more {
+            color: $color__journal-read-more;
+            padding: 0.75rem 1.25rem;
+            margin: 0;
+            border: 1px solid $color__journal-read-more;
+          }
+
+          .read-more:hover {
+            color: $color__background-body;
+            background: $color__brand-green;
+            border: 1px solid $color__brand-green;
+          }
+        }
+      }
+    }
+  }
+}
